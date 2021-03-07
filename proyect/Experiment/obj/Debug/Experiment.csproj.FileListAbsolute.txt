@@ -2,9 +2,9 @@ C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea
 C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\bin\Debug\Experiment.exe
 C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\bin\Debug\Experiment.pdb
 C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.csprojAssemblyReference.cache
-C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.FirstScreen.resources
 C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.Properties.Resources.resources
 C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.csproj.GenerateResource.cache
 C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.csproj.CoreCompileInputs.cache
 C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.exe
 C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.pdb
+C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.screen.resources

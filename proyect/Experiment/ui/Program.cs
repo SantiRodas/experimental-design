@@ -16,7 +16,7 @@ namespace Experiment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FirstScreen());
+            Application.Run(new screen());
         }
     }
 }

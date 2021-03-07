@@ -1,7 +1,7 @@
 ﻿
 namespace Experiment
 {
-    partial class FirstScreen
+    partial class screen
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace Experiment
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FirstScreen));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(screen));
             this.label1 = new System.Windows.Forms.Label();
             this.sizeOption1 = new System.Windows.Forms.RadioButton();
             this.sizeOption2 = new System.Windows.Forms.RadioButton();
@@ -276,7 +276,7 @@ namespace Experiment
             this.cleanButton.UseVisualStyleBackColor = true;
             this.cleanButton.Click += new System.EventHandler(this.cleanWindow);
             // 
-            // FirstScreen
+            // screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -289,7 +289,7 @@ namespace Experiment
             this.Controls.Add(this.image1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
-            this.Name = "FirstScreen";
+            this.Name = "screen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Experiment";
             this.container1.ResumeLayout(false);

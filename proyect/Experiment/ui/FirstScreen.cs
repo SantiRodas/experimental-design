@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Experiment
 {
-    public partial class FirstScreen : Form
+    public partial class screen : Form
     {
 
         // -----------------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ namespace Experiment
 
         // Constructor method of the first screen
 
-        public FirstScreen()
+        public screen()
         {
             InitializeComponent();
 

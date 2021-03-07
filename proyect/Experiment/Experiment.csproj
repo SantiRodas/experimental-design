@@ -48,16 +48,16 @@
   <ItemGroup>
     <Compile Include="model\Controller.cs" />
     <Compile Include="model\Methods.cs" />
-    <Compile Include="ui\Form1.cs">
+    <Compile Include="ui\FirstScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ui\FirstScreen.Designer.cs">
+      <DependentUpon>FirstScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="ui\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ui\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ui\FirstScreen.resx">
+      <DependentUpon>FirstScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
