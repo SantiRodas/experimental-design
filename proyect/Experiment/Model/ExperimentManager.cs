@@ -68,7 +68,7 @@ namespace Experiment.Model
 
                 sw.Start();
 
-                SortAlgorithms.BubbleSort(numArrayBubble);
+                int[] s = SortAlgorithms.BubbleSort(numArrayBubble);
 
                 sw.Stop();
 

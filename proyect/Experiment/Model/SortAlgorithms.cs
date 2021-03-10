@@ -7,7 +7,7 @@
 
         // Bubble sort method
 
-        public static void BubbleSort(int[] numArray)
+        public static int[] BubbleSort(int[] numArray)
         {
             int aux;
             for (int i = 1; i < numArray.Length; i ++)
@@ -21,7 +21,9 @@
                         numArray[j] = aux;
                     }
                 }
-            }            
+            }
+
+            return numArray;
         }
 
         // -----------------------------------------------------------------------------------------
