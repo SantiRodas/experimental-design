@@ -11,17 +11,20 @@ namespace Experiment.Model
 
         // Fields and properties
 
-        private string[] _lastExpResults; //Comma separated values [0] are headers
+        //Comma separated values first line experiment #, second headers for each experiment then values
+        private List<String> _expResults; 
 
         private readonly Random _ranNumGen;
 
         private int _experimentId;
 
-        public string[] LastExpResults
+        private Stopwatch _stopwatch;
+
+        public List<String> ExpResults
         {
             get
             {
-                return _lastExpResults;
+                return _expResults;
             }
 
         }
@@ -31,8 +34,10 @@ namespace Experiment.Model
 
         public ExperimentManager()
         {
+            _expResults = new List<string>();
             _ranNumGen = new Random();
-            _experimentId = 0;
+            _experimentId = 1;
+            _stopwatch = new Stopwatch();
         }
 
         // -----------------------------------------------------------------------------------------
@@ -41,12 +46,11 @@ namespace Experiment.Model
         // Modify in case a progress bar wants to be added in user interface
         public bool StartExperiment(int arraySize, int rep, Order order)
         {
-            Stopwatch sw = new Stopwatch();
+            _expResults.Add("Experiment #" + _experimentId);
+            _expResults.Add("Repetition,Size,Order,BubbleTime(ms),SelectionTime(ms)");
+            _experimentId++;
 
-            _lastExpResults = new string[rep + 1];
-            _lastExpResults[0] = "repetition,size,order,bubbleTime(ms),selectionTime(ms)";
-
-            for (int i = 0; i < rep; i++)
+            for (int i = 1; i <= rep; i++)
             {
                 List<int[]> arrays;
               
@@ -66,25 +70,25 @@ namespace Experiment.Model
                 int[] numArrayBubble = arrays[0];
                 int[] numArrayInsertion = arrays[0];
 
-                sw.Start();
+                _stopwatch.Start();
 
                 SortAlgorithms.BubbleSort(numArrayBubble);
 
-                sw.Stop();
+                _stopwatch.Stop();
 
-                long bubbleTime = sw.ElapsedMilliseconds;
+                long bubbleTime = _stopwatch.ElapsedMilliseconds;
 
-                sw.Reset();
-                sw.Start();
+                _stopwatch.Reset();
+                _stopwatch.Start();
 
                 SortAlgorithms.InsertionSort(numArrayInsertion);
 
-                sw.Stop();
+                _stopwatch.Stop();
 
-                long insertionTime = sw.ElapsedMilliseconds;
-                sw.Reset();
+                long insertionTime = _stopwatch.ElapsedMilliseconds;
+                _stopwatch.Reset();
 
-                _lastExpResults[rep+1] = (rep + 1) + "," + arraySize + "," + order + "," + bubbleTime + "," + insertionTime;
+                _expResults.Add(i + "," + arraySize + "," + order + "," + bubbleTime + "," + insertionTime);
 
             }
             return true;
@@ -144,22 +148,22 @@ namespace Experiment.Model
             return list;
         }
 
-        public void SaveDataToFile(string path, string fileName)
+        public void SaveDataToFile(string completePath)
         {
             string results = "";
 
-            if(_lastExpResults == null)
+            if(_expResults == null)
             {
-                throw new Exception("No experiment was previously executed");
+                throw new Exception("No experiment data is saved");
             }
 
 
-            for (int i = 0; i < _lastExpResults.Length; i++)
+            for (int i = 0; i < _expResults.Count; i++)
             {
-                results += _lastExpResults[i] + "\n";
+                results += _expResults[i] + "\n";
             }
 
-            File.WriteAllText(path + fileName + ".csv", results);
+            File.WriteAllText(completePath, results);
 
         }
     }

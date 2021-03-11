@@ -18,3 +18,13 @@ C:\Users\estudiante\Pictures\exp\experimental-design\proyect\Experiment\obj\Debu
 C:\Users\estudiante\Pictures\exp\experimental-design\proyect\Experiment\bin\Debug\Experiment.exe.config
 C:\Users\estudiante\Pictures\exp\experimental-design\proyect\Experiment\bin\Debug\Experiment.exe
 C:\Users\estudiante\Pictures\exp\experimental-design\proyect\Experiment\bin\Debug\Experiment.pdb
+C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\bin\Debug\Experiment.exe.config
+C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\bin\Debug\Experiment.exe
+C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\bin\Debug\Experiment.pdb
+C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\obj\Debug\Experiment.csprojAssemblyReference.cache
+C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\obj\Debug\Experiment.screen.resources
+C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\obj\Debug\Experiment.Properties.Resources.resources
+C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\obj\Debug\Experiment.csproj.GenerateResource.cache
+C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\obj\Debug\Experiment.csproj.CoreCompileInputs.cache
+C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\obj\Debug\Experiment.exe
+C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\obj\Debug\Experiment.pdb

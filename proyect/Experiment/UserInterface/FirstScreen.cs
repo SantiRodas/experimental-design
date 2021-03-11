@@ -31,7 +31,7 @@ namespace Experiment
 
         // Relations with the Controller class of the namespace model
 
-        private Controller controller;
+        private ExperimentManager expManager;
 
         // -----------------------------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ namespace Experiment
 
             numberRepetitions.Enabled = false;
 
-            controller = new Controller();
+            expManager = new ExperimentManager();
         }
 
         // -----------------------------------------------------------------------------------------
@@ -109,7 +109,7 @@ namespace Experiment
 
             int size = 0;
             int repetitions = 0;
-            int order = 0;
+            Order order;
 
             // *****  Validation of the size  *****
 
@@ -136,6 +136,7 @@ namespace Experiment
             else
             {
                 MessageBox.Show("Please try to select a size");
+                return;
             }
 
             // *****  Validation of the repetitions  *****
@@ -153,38 +154,60 @@ namespace Experiment
                     if (repetitions <= 100)
                     {
                         MessageBox.Show("Please try to write a number over 100");
+                        return;
                     }
                 }
                 catch (FormatException)
                 {
                     MessageBox.Show("Please try to write a number");
+                    return;
                 }
             }
             else
             {
                 MessageBox.Show("Please try to select the number of repetitions");
+                return;
             }
 
             // *****  Validation of the order  *****
 
             if (orderOption1.Checked)
             {
-                order = 1;
+                order = Order.Increasing;
             } 
             else if (orderOption2.Checked)
             {
-                order = 2;
+                order = Order.Decreasing;
             }
             else if (orderOption3.Checked)
             {
-                order = 3;
+                order = Order.Random;
             }
             else
             {
                 MessageBox.Show("Please try to select the order of the array");
+                return;
             }
 
-            controller.experiment(size, repetitions, order);
+            expManager.StartExperiment(size, repetitions, order);
+
+        }
+
+        private void saveDataButton_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+
+            sfd.AddExtension = false;
+            sfd.Filter = "Text File (*.txt) |*.txt |Comma Separated Value File (*.csv) |*.csv";
+            sfd.FilterIndex = 2;
+
+            if(sfd.ShowDialog() == DialogResult.OK)
+            {
+                string PathAndFileName = sfd.FileName;
+
+                expManager.SaveDataToFile(PathAndFileName);
+
+            }
 
         }
 

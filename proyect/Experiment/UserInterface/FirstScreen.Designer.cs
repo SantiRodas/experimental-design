@@ -50,6 +50,7 @@ namespace Experiment
             this.image1 = new System.Windows.Forms.PictureBox();
             this.startButton = new System.Windows.Forms.Button();
             this.cleanButton = new System.Windows.Forms.Button();
+            this.saveDataButton = new System.Windows.Forms.Button();
             this.container1.SuspendLayout();
             this.container2.SuspendLayout();
             this.container3.SuspendLayout();
@@ -251,16 +252,16 @@ namespace Experiment
             this.image1.Image = ((System.Drawing.Image)(resources.GetObject("image1.Image")));
             this.image1.Location = new System.Drawing.Point(-6, 123);
             this.image1.Name = "image1";
-            this.image1.Size = new System.Drawing.Size(646, 258);
+            this.image1.Size = new System.Drawing.Size(669, 312);
             this.image1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.image1.TabIndex = 9;
             this.image1.TabStop = false;
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(557, 30);
+            this.startButton.Location = new System.Drawing.Point(557, 12);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(75, 23);
+            this.startButton.Size = new System.Drawing.Size(99, 23);
             this.startButton.TabIndex = 10;
             this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = true;
@@ -268,19 +269,30 @@ namespace Experiment
             // 
             // cleanButton
             // 
-            this.cleanButton.Location = new System.Drawing.Point(557, 59);
+            this.cleanButton.Location = new System.Drawing.Point(557, 51);
             this.cleanButton.Name = "cleanButton";
-            this.cleanButton.Size = new System.Drawing.Size(75, 23);
+            this.cleanButton.Size = new System.Drawing.Size(99, 23);
             this.cleanButton.TabIndex = 11;
             this.cleanButton.Text = "Clean";
             this.cleanButton.UseVisualStyleBackColor = true;
             this.cleanButton.Click += new System.EventHandler(this.cleanWindow);
             // 
+            // saveDataButton
+            // 
+            this.saveDataButton.Location = new System.Drawing.Point(557, 88);
+            this.saveDataButton.Name = "saveDataButton";
+            this.saveDataButton.Size = new System.Drawing.Size(99, 23);
+            this.saveDataButton.TabIndex = 12;
+            this.saveDataButton.Text = "Save Data (CSV)";
+            this.saveDataButton.UseVisualStyleBackColor = true;
+            this.saveDataButton.Click += new System.EventHandler(this.saveDataButton_Click);
+            // 
             // screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(635, 381);
+            this.ClientSize = new System.Drawing.Size(661, 433);
+            this.Controls.Add(this.saveDataButton);
             this.Controls.Add(this.cleanButton);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.container3);
@@ -325,6 +337,7 @@ namespace Experiment
         private System.Windows.Forms.PictureBox image1;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button cleanButton;
+        private System.Windows.Forms.Button saveDataButton;
     }
 }
 
