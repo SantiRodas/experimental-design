@@ -47,7 +47,7 @@ namespace Experiment.Model
         public bool StartExperiment(int arraySize, int rep, Order order)
         {
             _expResults.Add("Experiment #" + _experimentId);
-            _expResults.Add("Repetition,Size,Order,BubbleTime(ms),SelectionTime(ms)");
+            _expResults.Add("Repetition,Size,Order,BubbleTime(ms),InsertionTime(ms)");
             _experimentId++;
 
             for (int i = 1; i <= rep; i++)
