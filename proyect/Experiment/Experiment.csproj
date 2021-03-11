@@ -49,6 +49,7 @@
     <Compile Include="Model\ExperimentManager.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\SortAlgorithms.cs" />
+    <Compile Include="UserInterface\Controller.cs" />
     <Compile Include="UserInterface\FirstScreen.cs">
       <SubType>Form</SubType>
     </Compile>
