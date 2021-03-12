@@ -191,6 +191,7 @@ namespace Experiment.UserInterface
 
             Thread experimentThread = new Thread(new ParameterizedThreadStart(RunExperiment));
             expManager.CurrentRepetitionsCount = 0;
+            experimentThread.Priority = ThreadPriority.Highest;
             experimentThread.Start(expInfo);
 
             repProgressBar.Value = 0;
