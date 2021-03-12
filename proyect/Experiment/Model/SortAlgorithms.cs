@@ -36,7 +36,7 @@
             for (int i = 1; i < numArray.Length; i ++)
             {
                 aux = numArray[i];
-                for (int j = i - 1; j > 0 && numArray[j] > aux; j--)
+                for (int j = i - 1; j >= 0 && numArray[j] > aux; j--)
                 {
                     numArray[j + 1] = numArray[j];
                     numArray[j] = aux;
