@@ -89,10 +89,10 @@ namespace Experiment.UserInterface
             this.sizeOption2.AutoSize = true;
             this.sizeOption2.Location = new System.Drawing.Point(9, 61);
             this.sizeOption2.Name = "sizeOption2";
-            this.sizeOption2.Size = new System.Drawing.Size(52, 17);
+            this.sizeOption2.Size = new System.Drawing.Size(43, 17);
             this.sizeOption2.TabIndex = 2;
             this.sizeOption2.TabStop = true;
-            this.sizeOption2.Text = "1.000";
+            this.sizeOption2.Text = "100";
             this.sizeOption2.UseVisualStyleBackColor = true;
             // 
             // sizeOption3
@@ -100,10 +100,10 @@ namespace Experiment.UserInterface
             this.sizeOption3.AutoSize = true;
             this.sizeOption3.Location = new System.Drawing.Point(9, 84);
             this.sizeOption3.Name = "sizeOption3";
-            this.sizeOption3.Size = new System.Drawing.Size(58, 17);
+            this.sizeOption3.Size = new System.Drawing.Size(52, 17);
             this.sizeOption3.TabIndex = 3;
             this.sizeOption3.TabStop = true;
-            this.sizeOption3.Text = "10.000";
+            this.sizeOption3.Text = "1,000";
             this.sizeOption3.UseVisualStyleBackColor = true;
             // 
             // sizeOption4
@@ -111,10 +111,10 @@ namespace Experiment.UserInterface
             this.sizeOption4.AutoSize = true;
             this.sizeOption4.Location = new System.Drawing.Point(9, 107);
             this.sizeOption4.Name = "sizeOption4";
-            this.sizeOption4.Size = new System.Drawing.Size(64, 17);
+            this.sizeOption4.Size = new System.Drawing.Size(58, 17);
             this.sizeOption4.TabIndex = 4;
             this.sizeOption4.TabStop = true;
-            this.sizeOption4.Text = "100.000";
+            this.sizeOption4.Text = "10,000";
             this.sizeOption4.UseVisualStyleBackColor = true;
             // 
             // sizeOption5
@@ -122,10 +122,10 @@ namespace Experiment.UserInterface
             this.sizeOption5.AutoSize = true;
             this.sizeOption5.Location = new System.Drawing.Point(9, 130);
             this.sizeOption5.Name = "sizeOption5";
-            this.sizeOption5.Size = new System.Drawing.Size(73, 17);
+            this.sizeOption5.Size = new System.Drawing.Size(64, 17);
             this.sizeOption5.TabIndex = 5;
             this.sizeOption5.TabStop = true;
-            this.sizeOption5.Text = "1.000.000";
+            this.sizeOption5.Text = "100,000";
             this.sizeOption5.UseVisualStyleBackColor = true;
             // 
             // container1
@@ -345,7 +345,7 @@ namespace Experiment.UserInterface
             this.totalRepLabel.TabIndex = 18;
             this.totalRepLabel.Text = "0";
             // 
-            // screen
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -365,7 +365,7 @@ namespace Experiment.UserInterface
             this.Controls.Add(this.image1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
-            this.Name = "screen";
+            this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Experiment";
             this.container1.ResumeLayout(false);
