@@ -14,10 +14,10 @@ namespace Experiment.UserInterface
         // Constants
 
         public const int SIZE1 = 10;
-        public const int SIZE2 = 1000;
-        public const int SIZE3 = 10000;
-        public const int SIZE4 = 100000;
-        public const int SIZE5 = 1000000;
+        public const int SIZE2 = 100;
+        public const int SIZE3 = 1000;
+        public const int SIZE4 = 10000;
+        public const int SIZE5 = 100000;
 
         public const int DEFAULTREPETITIONS = 100;
 
