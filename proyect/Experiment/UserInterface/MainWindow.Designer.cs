@@ -1,7 +1,7 @@
 ﻿
-namespace Experiment
+namespace Experiment.UserInterface
 {
-    partial class screen
+    partial class MainWindow
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace Experiment
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(screen));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.label1 = new System.Windows.Forms.Label();
             this.sizeOption1 = new System.Windows.Forms.RadioButton();
             this.sizeOption2 = new System.Windows.Forms.RadioButton();
@@ -51,6 +51,12 @@ namespace Experiment
             this.startButton = new System.Windows.Forms.Button();
             this.cleanButton = new System.Windows.Forms.Button();
             this.saveDataButton = new System.Windows.Forms.Button();
+            this.repProgressBar = new System.Windows.Forms.ProgressBar();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.currentRepLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.totalRepLabel = new System.Windows.Forms.Label();
             this.container1.SuspendLayout();
             this.container2.SuspendLayout();
             this.container3.SuspendLayout();
@@ -167,7 +173,7 @@ namespace Experiment
             this.repetitionOption2.TabStop = true;
             this.repetitionOption2.Text = "More than 100: ";
             this.repetitionOption2.UseVisualStyleBackColor = true;
-            this.repetitionOption2.CheckedChanged += new System.EventHandler(this.validationNumberRepetitions2);
+            this.repetitionOption2.CheckedChanged += new System.EventHandler(this.ValidationNumberRepetitions2);
             // 
             // repetitionOption1
             // 
@@ -179,7 +185,7 @@ namespace Experiment
             this.repetitionOption1.TabStop = true;
             this.repetitionOption1.Text = "Default (100)";
             this.repetitionOption1.UseVisualStyleBackColor = true;
-            this.repetitionOption1.CheckedChanged += new System.EventHandler(this.validationNumberRepetitions);
+            this.repetitionOption1.CheckedChanged += new System.EventHandler(this.ValidationNumberRepetitions);
             // 
             // label2
             // 
@@ -250,9 +256,9 @@ namespace Experiment
             // image1
             // 
             this.image1.Image = ((System.Drawing.Image)(resources.GetObject("image1.Image")));
-            this.image1.Location = new System.Drawing.Point(-6, 123);
+            this.image1.Location = new System.Drawing.Point(-1, 170);
             this.image1.Name = "image1";
-            this.image1.Size = new System.Drawing.Size(669, 312);
+            this.image1.Size = new System.Drawing.Size(668, 315);
             this.image1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.image1.TabIndex = 9;
             this.image1.TabStop = false;
@@ -265,7 +271,7 @@ namespace Experiment
             this.startButton.TabIndex = 10;
             this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = true;
-            this.startButton.Click += new System.EventHandler(this.startExperiment);
+            this.startButton.Click += new System.EventHandler(this.StartExperiment);
             // 
             // cleanButton
             // 
@@ -275,7 +281,7 @@ namespace Experiment
             this.cleanButton.TabIndex = 11;
             this.cleanButton.Text = "Clean";
             this.cleanButton.UseVisualStyleBackColor = true;
-            this.cleanButton.Click += new System.EventHandler(this.cleanWindow);
+            this.cleanButton.Click += new System.EventHandler(this.CleanWindow);
             // 
             // saveDataButton
             // 
@@ -287,11 +293,69 @@ namespace Experiment
             this.saveDataButton.UseVisualStyleBackColor = true;
             this.saveDataButton.Click += new System.EventHandler(this.saveDataButton_Click);
             // 
+            // repProgressBar
+            // 
+            this.repProgressBar.Location = new System.Drawing.Point(254, 127);
+            this.repProgressBar.Name = "repProgressBar";
+            this.repProgressBar.Size = new System.Drawing.Size(220, 23);
+            this.repProgressBar.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(197, 131);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Progress:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(480, 131);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 13);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Repetitions:";
+            // 
+            // currentRepLabel
+            // 
+            this.currentRepLabel.AutoSize = true;
+            this.currentRepLabel.Location = new System.Drawing.Point(544, 132);
+            this.currentRepLabel.Name = "currentRepLabel";
+            this.currentRepLabel.Size = new System.Drawing.Size(13, 13);
+            this.currentRepLabel.TabIndex = 16;
+            this.currentRepLabel.Text = "0";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(572, 132);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(12, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "/";
+            // 
+            // totalRepLabel
+            // 
+            this.totalRepLabel.AutoSize = true;
+            this.totalRepLabel.Location = new System.Drawing.Point(599, 132);
+            this.totalRepLabel.Name = "totalRepLabel";
+            this.totalRepLabel.Size = new System.Drawing.Size(13, 13);
+            this.totalRepLabel.TabIndex = 18;
+            this.totalRepLabel.Text = "0";
+            // 
             // screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 433);
+            this.ClientSize = new System.Drawing.Size(661, 484);
+            this.Controls.Add(this.totalRepLabel);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.currentRepLabel);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.repProgressBar);
             this.Controls.Add(this.saveDataButton);
             this.Controls.Add(this.cleanButton);
             this.Controls.Add(this.startButton);
@@ -312,6 +376,7 @@ namespace Experiment
             this.container3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -338,6 +403,12 @@ namespace Experiment
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button cleanButton;
         private System.Windows.Forms.Button saveDataButton;
+        private System.Windows.Forms.ProgressBar repProgressBar;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label currentRepLabel;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label totalRepLabel;
     }
 }
 

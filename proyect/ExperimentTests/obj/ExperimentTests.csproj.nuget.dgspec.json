@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\estudiante\\Pictures\\exp\\experimental-design\\proyect\\ExperimentTests\\ExperimentTests.csproj": {}
+    "C:\\Users\\juanf\\Documents\\GitHub\\experimental-design\\proyect\\ExperimentTests\\ExperimentTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\estudiante\\Pictures\\exp\\experimental-design\\proyect\\ExperimentTests\\ExperimentTests.csproj": {
+    "C:\\Users\\juanf\\Documents\\GitHub\\experimental-design\\proyect\\ExperimentTests\\ExperimentTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\estudiante\\Pictures\\exp\\experimental-design\\proyect\\ExperimentTests\\ExperimentTests.csproj",
+        "projectUniqueName": "C:\\Users\\juanf\\Documents\\GitHub\\experimental-design\\proyect\\ExperimentTests\\ExperimentTests.csproj",
         "projectName": "ExperimentTests",
-        "projectPath": "C:\\Users\\estudiante\\Pictures\\exp\\experimental-design\\proyect\\ExperimentTests\\ExperimentTests.csproj",
-        "packagesPath": "C:\\Users\\estudiante\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\estudiante\\Pictures\\exp\\experimental-design\\proyect\\ExperimentTests\\obj\\",
+        "projectPath": "C:\\Users\\juanf\\Documents\\GitHub\\experimental-design\\proyect\\ExperimentTests\\ExperimentTests.csproj",
+        "packagesPath": "C:\\Users\\juanf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juanf\\Documents\\GitHub\\experimental-design\\proyect\\ExperimentTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\estudiante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juanf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

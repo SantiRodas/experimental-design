@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Experiment
+namespace Experiment.UserInterface
 {
     static class Program
     {
@@ -16,7 +13,7 @@ namespace Experiment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new screen());
+            Application.Run(new MainWindow());
         }
     }
 }

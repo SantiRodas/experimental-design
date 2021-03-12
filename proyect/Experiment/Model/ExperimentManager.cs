@@ -28,6 +28,21 @@ namespace Experiment.Model
             }
 
         }
+
+        private int _currentRepetitionsCount;
+
+        public int CurrentRepetitionsCount
+        {
+            get
+            {
+                return _currentRepetitionsCount;
+            }
+            set
+            {
+                _currentRepetitionsCount = value;
+            }
+        }
+
         // -----------------------------------------------------------------------------------------
 
         // Constructor method of the class Controller
@@ -45,10 +60,11 @@ namespace Experiment.Model
         // Principal method of the proyect Experiment
         // Modify in case a progress bar wants to be added in user interface
         public bool StartExperiment(int arraySize, int rep, Order order)
-        {
+        {           
             _expResults.Add("Experiment #" + _experimentId);
             _expResults.Add("Repetition,Size,Order,BubbleTime(ms),InsertionTime(ms)");
             _experimentId++;
+            _currentRepetitionsCount = 0;
 
             for (int i = 1; i <= rep; i++)
             {
@@ -90,7 +106,10 @@ namespace Experiment.Model
 
                 _expResults.Add(i + "," + arraySize + "," + order + "," + bubbleTime + "," + insertionTime);
 
+                _currentRepetitionsCount++;
             }
+           
+
             return true;
         }
 

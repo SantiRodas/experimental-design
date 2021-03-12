@@ -49,16 +49,16 @@
     <Compile Include="Model\ExperimentManager.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\SortAlgorithms.cs" />
-    <Compile Include="UserInterface\FirstScreen.cs">
+    <Compile Include="UserInterface\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserInterface\FirstScreen.Designer.cs">
-      <DependentUpon>FirstScreen.cs</DependentUpon>
+    <Compile Include="UserInterface\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInterface\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="UserInterface\FirstScreen.resx">
-      <DependentUpon>FirstScreen.cs</DependentUpon>
+    <EmbeddedResource Include="UserInterface\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

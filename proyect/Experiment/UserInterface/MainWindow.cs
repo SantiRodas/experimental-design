@@ -1,18 +1,12 @@
 ﻿using Experiment.Model;
-using Experiment.UserInterface;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
+using System.Threading;
 using System.Windows.Forms;
 
-namespace Experiment
+namespace Experiment.UserInterface
 {
-    public partial class screen : Form
+    public partial class MainWindow : Form
     {
 
         // -----------------------------------------------------------------------------------------
@@ -37,7 +31,7 @@ namespace Experiment
 
         // Constructor method of the first screen
 
-        public screen()
+        public MainWindow()
         {
             InitializeComponent();
 
@@ -50,7 +44,7 @@ namespace Experiment
 
         // Validation method of the number of repetitions.
 
-        private void validationNumberRepetitions(object sender, EventArgs e)
+        private void ValidationNumberRepetitions(object sender, EventArgs e)
         {
             if (repetitionOption1.Checked == true)
             {
@@ -67,7 +61,7 @@ namespace Experiment
 
         // Validation method of the number of repetitions 2.
 
-        private void validationNumberRepetitions2(object sender, EventArgs e)
+        private void ValidationNumberRepetitions2(object sender, EventArgs e)
         {
             if (repetitionOption2.Checked == true)
             {
@@ -80,7 +74,7 @@ namespace Experiment
 
         // Clean method that allow erase all the window
 
-        private void cleanWindow(object sender, EventArgs e)
+        private void CleanWindow(object sender, EventArgs e)
         {
             sizeOption1.Checked = false;
             sizeOption2.Checked = false;
@@ -102,7 +96,7 @@ namespace Experiment
 
         // Start method
 
-        private void startExperiment(object sender, EventArgs e)
+        private void StartExperiment(object sender, EventArgs e)
         {
 
             // *****  Some variables of the system  *****
@@ -189,8 +183,39 @@ namespace Experiment
                 return;
             }
 
-            expManager.StartExperiment(size, repetitions, order);
+            Object[] expInfo = new object[3];
 
+            expInfo[0] = size;
+            expInfo[1] = repetitions;
+            expInfo[2] = order;
+
+            Thread experimentThread = new Thread(new ParameterizedThreadStart(RunExperiment));
+            expManager.CurrentRepetitionsCount = 0;
+            experimentThread.Start(expInfo);
+
+            repProgressBar.Value = 0;
+            repProgressBar.Maximum = repetitions;
+            totalRepLabel.Text = "" + repetitions;
+            currentRepLabel.Text = "990";
+
+            while (expManager.CurrentRepetitionsCount < repetitions)
+            {
+                int currentReps = expManager.CurrentRepetitionsCount;
+                currentRepLabel.Text = "" + currentReps;
+                repProgressBar.Value = currentReps;
+                Application.DoEvents();//Can be improve by the use of threads
+            }
+
+            repProgressBar.Value = repetitions;
+            currentRepLabel.Text = "" + repetitions;
+
+        }
+
+        public void RunExperiment(Object expInfo)
+        {
+            Object[] expInfoReal = (Object[])expInfo;
+
+            expManager.StartExperiment((int)expInfoReal[0],(int)expInfoReal[1],(Order)expInfoReal[2]);
         }
 
         private void saveDataButton_Click(object sender, EventArgs e)
