@@ -20,6 +20,7 @@ namespace Experiment.Model
 
         private Stopwatch _stopwatch;
 
+
         public List<String> ExpResults
         {
             get
@@ -68,10 +69,10 @@ namespace Experiment.Model
                 }
 
                 int[] numArrayBubble = arrays[0];
-                int[] numArrayInsertion = arrays[0];
+                int[] numArrayInsertion = arrays[1];
 
                 _stopwatch.Start();
-
+                int[] x = numArrayInsertion;
                 SortAlgorithms.BubbleSort(numArrayBubble);
 
                 _stopwatch.Stop();
@@ -80,7 +81,7 @@ namespace Experiment.Model
 
                 _stopwatch.Reset();
                 _stopwatch.Start();
-
+               
                 SortAlgorithms.InsertionSort(numArrayInsertion);
 
                 _stopwatch.Stop();
@@ -100,16 +101,18 @@ namespace Experiment.Model
         {
             int[] numArray1 = new int[size];
             int[] numArray2 = new int[size];
-            
+            var random = new Random();
+
             for (int i = 0; i < size; i++)
             {
-                int randNum = ((_ranNumGen.Next(0, 1) > 0.5) ? 1 : -1) * _ranNumGen.Next();
-                numArray1[i] = randNum;
-                numArray2[i] = randNum;
+                
+                int randomnumber = random.Next();
+                numArray1[i] = randomnumber;
+                numArray2[i] = randomnumber;
             }
 
             List<int[]> list = new List<int[]>();
-
+           
             list.Add(numArray1);
             list.Add(numArray2);
 
@@ -122,6 +125,7 @@ namespace Experiment.Model
         {
             int[] numArray1 = new int[size];
             int[] numArray2 = new int[size];
+            int limit = size;
 
             if (increasing)
             {
@@ -133,10 +137,11 @@ namespace Experiment.Model
             }
             else
             {
-                for (int i = size - 1; i >= 0; i--)
+                for (int i = 0; i < size; i++)
                 {
-                    numArray1[i] = i;
-                    numArray2[i] = i;
+                    numArray1[i] = limit;
+                    numArray2[i] = limit;
+                    limit--;
                 }
             }
 

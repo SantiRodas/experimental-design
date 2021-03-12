@@ -1,5 +1,4 @@
 ﻿using Experiment.Model;
-using Experiment.UserInterface;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
