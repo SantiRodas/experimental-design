@@ -45,3 +45,7 @@ A program that allows performing experiments on sorting an array of N values in 
 
 ## License
 * [GNU General Public License v3.0](https://github.com/SantiRodas/experimental-design/blob/master/LICENSE)
+
+## System screens
+
+![](https://github.com/SantiRodas/experimental-design/blob/master/proyect/images/ToReadme.JPG)
