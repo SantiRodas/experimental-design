@@ -7,7 +7,6 @@ C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea
 C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.csproj.CoreCompileInputs.cache
 C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.exe
 C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.pdb
-C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.screen.resources
 C:\Users\estudiante\Pictures\exp\experimental-design\proyect\Experiment\obj\Debug\Experiment.csprojAssemblyReference.cache
 C:\Users\estudiante\Pictures\exp\experimental-design\proyect\Experiment\obj\Debug\Experiment.Properties.Resources.resources
 C:\Users\estudiante\Pictures\exp\experimental-design\proyect\Experiment\obj\Debug\Experiment.csproj.GenerateResource.cache
@@ -28,3 +27,4 @@ C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\obj\Debug
 C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\obj\Debug\Experiment.pdb
 C:\Users\juanf\Documents\GitHub\experimental-design\proyect\Experiment\obj\Debug\Experiment.UserInterface.MainWindow.resources
 C:\Users\estudiante\Pictures\exp\experimental-design\proyect\Experiment\obj\Debug\Experiment.UserInterface.MainWindow.resources
+C:\Users\Santiago\Desktop\Actual semestre\1. Proyecto integrador\1. Tareas\Tarea 4\Fuera de clase\experimental-design\proyect\Experiment\obj\Debug\Experiment.UserInterface.MainWindow.resources
