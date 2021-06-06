@@ -16,14 +16,13 @@ A program that allows performing experiments on sorting an array of N values in 
 
 ## Stages of construction
 * Analysis
-* https://github.com/SantiRodas/experimental-design/blob/master/proyect/docs/Diagrama%20clases.pdf
-* https://github.com/SantiRodas/experimental-design/blob/master/proyect/docs/Diagrama%20test.pdf
-* https://github.com/SantiRodas/experimental-design/blob/master/proyect/docs/Dise%C3%B1o%20de%20pruebas.pdf
+* [Diagram of class](https://github.com/SantiRodas/experimental-design/blob/master/proyect/docs/Diagrama%20clases.pdf)
+* [Diagram of test](https://github.com/SantiRodas/experimental-design/blob/master/proyect/docs/Diagrama%20test.pdf)
+* [Test](https://github.com/SantiRodas/experimental-design/blob/master/proyect/docs/Dise%C3%B1o%20de%20pruebas.pdf)
 
-
-*Design
-* https://github.com/SantiRodas/experimental-design/blob/master/proyect/docs/Analisis%20de%20complejidad.pdf
-* https://github.com/SantiRodas/experimental-design/blob/master/proyect/docs/Informe.pdf
+* Design
+* [Complexity analysis](https://github.com/SantiRodas/experimental-design/blob/master/proyect/docs/Analisis%20de%20complejidad.pdf)
+* [Engineering method](https://github.com/SantiRodas/experimental-design/blob/master/proyect/docs/Informe.pdf)
 
 
 ## Tools used
@@ -45,4 +44,4 @@ A program that allows performing experiments on sorting an array of N values in 
 
 
 ## License
-This project is under the license (GNU General Public License v3.0): https://github.com/SantiRodas/experimental-design/blob/master/LICENSE
+* [GNU General Public License v3.0](https://github.com/SantiRodas/experimental-design/blob/master/LICENSE)
